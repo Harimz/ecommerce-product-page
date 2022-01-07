@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 import { motion } from "framer-motion";
 
 export const Container = styled.nav`
-  max-width: 90rem;
+  max-width: 80rem;
   width: 90%;
   padding: 2rem 0;
   margin: 0 auto;

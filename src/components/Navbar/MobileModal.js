@@ -1,6 +1,6 @@
 import { AnimatePresence } from "framer-motion";
 import React from "react";
-import { Backdrop, Icon, List, ListItem, Menu, NavList } from "./Styles";
+import { Backdrop, Icon, ListItem, Menu, NavList } from "./Styles";
 import { FaTimes } from "react-icons/fa";
 
 const backdropVariant = {
