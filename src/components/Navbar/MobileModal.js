@@ -1,6 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import React from "react";
-import { Backdrop, Menu } from "./Styles";
+import { Backdrop, Icon, List, ListItem, Menu, NavList } from "./Styles";
+import { FaTimes } from "react-icons/fa";
 
 const backdropVariant = {
   hidden: { opacity: 0 },
@@ -30,7 +31,17 @@ const MobileModal = ({ showModal, setShowModal }) => {
           exit="hidden"
         >
           <Menu variants={modalVariants}>
-            <p onClick={() => setShowModal(false)}>Modal</p>
+            <Icon onClick={() => setShowModal(false)}>
+              <FaTimes className="times" />
+            </Icon>
+
+            <NavList>
+              <ListItem>Collections</ListItem>
+              <ListItem>Men</ListItem>
+              <ListItem>Women</ListItem>
+              <ListItem>About</ListItem>
+              <ListItem>Contact</ListItem>
+            </NavList>
           </Menu>
         </Backdrop>
       )}

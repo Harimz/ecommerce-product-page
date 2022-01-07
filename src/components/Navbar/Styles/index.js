@@ -45,6 +45,10 @@ export const ListItem = styled.li`
   &:hover:after {
     width: 100%;
   }
+
+  @media (max-width: 650px) {
+    color: black;
+  }
 `;
 
 export const Spacer = styled.div`
@@ -68,6 +72,10 @@ export const Icon = styled.div`
 
   .cart {
     height: 2rem;
+  }
+
+  .times {
+    margin-bottom: 2rem;
   }
 
   @media (max-width: 650px) {
@@ -100,8 +108,16 @@ export const Backdrop = styled(motion.div)`
 `;
 
 export const Menu = styled(motion.div)`
+  position: absolute;
   width: 75%;
-  padding: 1rem;
+  padding: 2rem;
   background: white;
   height: 100vh;
+`;
+
+export const NavList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: bold;
 `;
